@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="5Oy-WDvkQwpKBMkrnn-v08-DFwPvimuZuGJ8uWpRkK8" />
+    <meta name="description" content=" آموزش سی شارپ  سیپان یوسف پور">
+    <meta name="keywords" content="آموزش , سی شارپ ,C#">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> آموزش سی شارپ سیپان</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(45deg, #d85459, #000000, #c649a3, #1f4fa0, #000000, #b7c045, #18af1b);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);        }
+        
+        header {
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee, #a1c4fd, #c2e9fb, #d4fc79);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 4px 12px rgb(255, 255, 255);
+        }
+        
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        h1 {
+            font-size: 3rem;
+            text-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
+        }
+
+
+
+        .sipan {
+                        font-size: 1.3سrem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(45deg, rgb(5, 78, 189), rgb(255, 255, 255), rgb(242, 0, 255), rgb(125, 4, 165), rgb(250, 2, 134));
+            background-size: 400% 400%;
+            animation: gradient 20s ease infinite;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 4px 12px rgb(255, 255, 255);
+            border-radius:0px 0px 15px 15px;
+        }
+        
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        
+        
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .image-container {
+            width: 800px;
+            max-width: 900px;
+            height: 450px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .image-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            transition: transform 0.5s ease;
+        }
+        
+        .image-container:hover img {
+            transform: scale(1.02);
+        }
+        
+        footer  {
+            background: linear-gradient(45deg, black, red, blue);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 4px 12px rgb(255, 255, 255);
+        }
+        
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
+        .heart {
+            color: red;
+            font-size: 1.5rem;
+            animation: beat 1s infinite alternate;
+        }
+        
+        @keyframes beat {
+            to {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><b>SITE SIPAN</b></h1>
+    </header>
+    <div class="sipan">
+        <h3>!به دنیای برنامه نویسی پرتاب شو</h3>
+    </div>
+    <div class="gallery">
+        <h3 class="sipan"> قسمت1 - نام کاربری علی و رمز عبور 1234 </h3>
+        <video class="image-container"  controls poster="./static/pages1.PNG">
+            <source src="./static/s1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+          <h3 class="sipan"> قسمت2 - دستور سویچ کِیس </h3>
+          <video class="image-container"  controls poster="./static/pages2.PNG">
+            <source src="./static/s2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+
+    </div>
+    
+    <footer>
+        <p>made with <span class="heart">♥</span> by sipan milan | © 2025</p>
+    </footer>
+</body>
+</html>

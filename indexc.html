@@ -77,6 +77,33 @@
                 background-position: 0% 50%;
             }
         }
+
+        .sipan2 {
+                        font-size: 1.3سrem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(blue,red);
+            background-size: 400% 400%;
+            animation: gradient 20s ease infinite;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 4px 12px rgb(255, 255, 255);
+            border-radius:0px 0px 15px 15px;
+            margin-top: 10px;
+            margin-bottom: 0px;
+        }
+        
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
         
         
         
@@ -91,14 +118,16 @@
         }
         
         .image-container {
-            width: 800px;
+            width: 90%;
             max-width: 900px;
-            height: 450px;
+            height: auto;
             overflow: hidden;
             border-radius: 10px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             transition: all 0.3s ease;
             position: relative;
+            margin-top: 0px;
+            margin-bottom: 40px;
         }
         
         .image-container:hover {
@@ -160,13 +189,13 @@
         <h3>!به دنیای برنامه نویسی پرتاب شو</h3>
     </div>
     <div class="gallery">
-        <h3 class="sipan"> قسمت1 - نام کاربری علی و رمز عبور 1234 </h3>
+        <h3 class="sipan2"> قسمت1 - نام کاربری علی و رمز عبور 1234 </h3>
         <video class="image-container"  controls poster="./static/pages1.PNG">
             <source src="./static/s1.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
 
-          <h3 class="sipan"> قسمت2 - دستور سویچ کِیس </h3>
+          <h3 class="sipan2"> قسمت2 - دستور سویچ کِیس </h3>
           <video class="image-container"  controls poster="./static/pages2.PNG">
             <source src="./static/s2.mp4" type="video/mp4">
             Your browser does not support the video tag.
